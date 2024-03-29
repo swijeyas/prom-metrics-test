@@ -1,0 +1,6 @@
+To run:
+- Clone the repo
+- Install dependencies: pytest, prometheus_client
+- Create a metrics directory anywhere on your local filesystem where you have write permission. Eg: /tmp/metrics
+- Replace metrics directory path in prom_test.py (os.environ["PROMETHEUS_MULTIPROC_DIR"])
+- Run pytest: pytest prom_test.py
